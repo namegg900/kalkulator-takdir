@@ -1,5 +1,19 @@
 # Kalkulator Takdir
 
+## Tampilkan di GitHub Pages (biar tidak error Vercel)
+
+Repo ini sekarang sudah disiapkan workflow otomatis ke GitHub Pages di:
+
+- `.github/workflows/deploy-pages.yml`
+
+Langkah pakai:
+
+1. Push ke branch `main` (atau `master` / `work`).
+2. Buka GitHub repo -> **Settings** -> **Pages**.
+3. Source pilih **GitHub Actions**.
+4. Tunggu workflow **Deploy static site to GitHub Pages** selesai.
+5. Site akan tampil di URL Pages repo kamu.
+
 ## Deploy ke Vercel (static site)
 
 Project ini adalah **website statis** (tanpa backend), jadi konfigurasi Vercel yang aman:
