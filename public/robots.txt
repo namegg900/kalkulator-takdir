@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://kalkulator-takdir.example/sitemap.xml
