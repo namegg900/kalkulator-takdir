@@ -1,0 +1,17 @@
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.card, .hero { animation: fadeUp .45s ease both; }
+
+.bg-orb {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  position: fixed;
+  filter: blur(60px);
+  opacity: .32;
+  z-index: -1;
+}
+.bg-orb--one { background: #7a5dff; top: -80px; right: -70px; }
+.bg-orb--two { background: #16d2ff; left: -70px; bottom: -70px; }

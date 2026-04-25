@@ -1,0 +1,11 @@
+:root[data-theme="sunrise"] {
+  --bg: #211018;
+  --accent: #ff7f7f;
+  --accent-2: #ffc266;
+}
+
+:root[data-theme="ocean"] {
+  --bg: #041723;
+  --accent: #3a8dff;
+  --accent-2: #22d4be;
+}
