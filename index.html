@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator Takdir — Ramalan Absurd yang Aneh Tapi Menyenangkan</title>
+    <meta
+      name="description"
+      content="Masukkan nama dan tanggal lahir, lalu biarkan mesin takdir absurd menebak masa depanmu dengan tingkat kekonyolan maksimal."
+    />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/layout.css" />
+    <link rel="stylesheet" href="assets/css/components.css" />
+    <link rel="stylesheet" href="assets/css/animations.css" />
+    <link rel="stylesheet" href="assets/css/themes.css" />
+  </head>
+  <body>
+    <div class="bg-orb bg-orb--one" aria-hidden="true"></div>
+    <div class="bg-orb bg-orb--two" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="container">
+        <div class="brand">🔮 Kalkulator Takdir</div>
+        <nav class="site-nav">
+          <a href="index.html">Beranda</a>
+          <a href="pages/tentang.html">Tentang</a>
+          <a href="pages/arsip.html">Arsip Ramalan</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero" id="hero">
+        <p class="eyebrow">Kalkulator Takdir</p>
+        <h1>Ramalan absurd, tampilannya tetap serius.</h1>
+        <p>
+          Masukkan nama dan tanggal lahir. Hasil akan selalu konsisten untuk data yang sama, jadi tidak
+          bisa diacak ulang.
+        </p>
+      </section>
+
+      <section class="card form-card" id="ramal-form-section">
+        <h2>Mulai Ramalan</h2>
+        <form id="destiny-form" autocomplete="off">
+          <label for="name">Nama</label>
+          <input id="name" name="name" type="text" placeholder="contoh: Karel" required />
+
+          <label for="birthdate">Tanggal Lahir</label>
+          <input id="birthdate" name="birthdate" type="date" required />
+
+          <button type="submit" class="btn">Lihat Takdirku</button>
+        </form>
+      </section>
+
+      <section class="card result-card hidden" id="result" aria-live="polite">
+        <h2>Hasil Ramalanmu</h2>
+        <blockquote id="prediction">Menunggu energi kosmik...</blockquote>
+        <div class="result-meta" id="result-meta"></div>
+        <div class="actions">
+          <button id="copy" class="btn btn--ghost">Salin Hasil</button>
+        </div>
+      </section>
+
+      <section class="card" id="testimonial-section">
+        <h2>Katanya dari Pengguna</h2>
+        <ul id="testimonials" class="testimonial-list"></ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>Diracik dengan humor, gradien, dan sedikit gangguan logika.</p>
+      </div>
+    </footer>
+
+    <script src="assets/js/destiny-engine.js" defer></script>
+    <script src="assets/js/form-handler.js" defer></script>
+    <script src="assets/js/share.js" defer></script>
+    <script src="assets/js/ui-effects.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
+  </body>
+</html>
