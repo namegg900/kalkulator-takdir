@@ -1,6 +1,10 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
+  "redirects": [
+    { "source": "/pages/tentang.html", "destination": "/tentang", "permanent": true },
+    { "source": "/pages/arsip.html", "destination": "/arsip", "permanent": true }
+  ],
   "rewrites": [
     { "source": "/", "destination": "/index.html" },
     { "source": "/tentang", "destination": "/pages/tentang.html" },
